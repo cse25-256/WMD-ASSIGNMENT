@@ -49,6 +49,7 @@ nav a:hover{
      max-width: 1200px;
      margin: 40px auto;
      position: relative;
+     padding: 0;
 }
 
 .hero img{
@@ -70,7 +71,7 @@ nav a:hover{
         font-size: 48px;
         line-height: 1.1;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        text-shadow: 2px 2px 8px rgba;
 }
 
 /* BUTTONS */
@@ -154,7 +155,7 @@ section{
 .cards{
        display: flex;
        justify-content: center;
-       gap: 28px;
+       gap: 25px;
        flex-wrap: wrap;
 }
 
