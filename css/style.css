@@ -5,7 +5,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #f8f1ff, #ead7ff);
+    background: #f3e9fb;
     color: #2e103d;
 }
 
@@ -13,7 +13,7 @@ body{
 
 header{
       background-color: white;
-      padding: 22px 70px;
+      padding: 22px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,32 +24,37 @@ header h1{
          color: #4b1d67;
          margin: 0;
          font-size: 24px;
-         font-weight: 700;
 }
 
 nav{
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 nav a{
     color: #2e103d;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 14px;
 }
 
-nav a:hover{
-     color: #7b2cbf;   
+.nav-button,
+.button{
+     background-color: #6d2c91;
+     color: white;
+     padding: 14px 28px;
+     border-radius: 30px;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
 }
 
 /* HERO */
 
 .hero{
      max-width: 1200px;
-     margin: 40px auto;
+     margin: 35px auto;
      position: relative;
-     padding: 0;
 }
 
 .hero img{
@@ -68,194 +73,99 @@ nav a:hover{
 }
 
 .hero-text h2{
-        font-size: 48px;
+        font-size: 46px;
         line-height: 1.1;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 8px rgba;
+        text-shadow: 2px 2px 8px black;
 }
 
-/* BUTTONS */
+/* ABOUT */
 
-.button,
-button{
-     background-color: #6d2c91;
-     color: white;
-     padding: 14px 28px;
-     border-radius: 30px;
-     border: none;
-     text-decoration: none;
-     font-weight: 600;
-     display: inline-block;
-     cursor: pointer;
+.about-section{
+        max-width: 1200px;
+        margin: 70px auto;
+        display: flex;
+        align-items: center;
+        gap: 45px;
 }
 
-.button:hover,
-button:hover{
-       background-color: #9b4dcc;
+.about-section article,
+.about-section figure{
+        flex: 1;
+}
+
+.about-section h2,
+.section-title{
+        color: #4b1d67;
+        font-size: 36px;
+}
+
+.about-section p{
+    line-height: 1.7;
+}
+
+.about-section img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 24px;
+}
+
+.mission-box h3{
+        color: #4b1d67;
+        margin-bottom: 5px;
 }
 
 
 /* SECTIONS */
 
-
-section{
-    padding: 40px
-}
-
-.section-title,
-.page-title h2{
-      text-align: center;
-      font-size: 42px;
-      color: #4b1d67;
-      margin-bottom: 10px
-}
-
-/* ABOUT */
-
-.two-column{
-     max-width: 1200px;
-     margin: 70px auto;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 45px;
-}
-
-.two-column article,
-.two-column figure,
-.two-column form {
-    flex: 1;
-}
-
-.two-column h2{
-        font-size: 36px;
-        color: #4b1d67;
-}
-
-.two-column p{
-           font-size: 16px;
-           line-height: 1.7;
-}
-
-.two-column img{
-     width: 100%;
-     height: 350px;
-     object-fit: cover;
-     border-radius: 24px;
-}
-
-
-/* SERVICES */
-
-.service-section{
-    max-width: 1200px;
+.services-section{
+    max-width:1200px;
     margin: 70px auto;
+    text-align: center;
+}
+
+.section-title{
+      text-align: center;
+      margin-bottom: 45px
 }
 
 .cards{
-       display: flex;
-       justify-content: center;
-       gap: 25px;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
 }
 
 .card{
-       background-color: white;
-       width: 210px;
-       padding: 14px;
-       border-radius: 22px;
-       text-align: center;
-       box-shadow: 0 4px 18px rgba(75, 29, 103, 0.12);
-} 
-
-.card img{
-        width: 100%;
-        height: 170px;
-        object-fit: cover;
-        border-radius: 18px;
+     background-color: white;
+     width: 210px;
+     padding: 14px;
+     border-radius: 22px;
+     box-shadow: 0 4px 18px rgba(75, 29, 103, 0.12);
 }
 
-.card h3,
-figcaption {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #4b1d67;
+.card img{
+     width: 100%;
+     height: 170px;
+     object-fit: cover;
+     border-radius: 18px;
+}
+
+.card h3{
+      color: #4b1d67;
+      font-size: 20px;
+      margin-bottom: 5px;
 }
 
 .card p{
-     font-size: 13px;
-     line-height: 1.5;
+      font-size: 13px;
+      line-height: 1.5;
 }
-
-.price{
-    background-color: #6d2c91;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    display: inline-block;
-}
-
-
-/* GALLERY */
-
-.gallery{
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-}
-
-.gallery figure{
-            background-color: white;
-            padding: 10px;
-            border-radius: 18px;
-            box-shadow: 0 4px 12px rgba(75, 29, 103, 0.12 );
-}
-
-.gallery img{
-            width: 100%;
-            height: 10px;
-            object-fit: cover;
-            border-radius: 14px;
-}
-
-figure{
-     margin: 0;
-}
-
-
-/* FORMS */
-
-form{
-     background-color: white;
-     padding: 30px;
-     border-radius: 22px;
-     box-shadow: 0 4px 18px rgba(75, 29, 103, 0.12);
-     display: flex;
-     flex-direction: column;
-     gap: 15px;
-}
-
-input,
-select,
-textarea{
-        padding: 14px;
-        border: 1px solid #d6b4ff;
-        border-radius: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-}
-
-textarea{
-        height: 120px;
-}
-
-/* CENTER */
 
 .center{
        text-align: center;
-       margin: 30px
+       margin-top: 35px;
 }
 
 /* FOOTER */
@@ -278,7 +188,7 @@ footer section{
 
 @media screen and (max-width: 768px){
        header,
-       .two-column,
+       .about-secion,
         footer{
                flex-direction: column;
                text-align: center;
@@ -286,8 +196,7 @@ footer section{
 
   nav {
       flex-direction: column;
-       gap: 12px;
-       margin-top: 15px ;
+       margin: 20px 0;
   }
     
 
@@ -295,12 +204,11 @@ footer section{
         position: static;
         color: #4b1d67;
         text-align: center;
-        margin-top: 20px;
         transform: none;
   }
 
   .hero-text h2{
-         font-size: 32px;
+         font-size: 30px;
          text-shadow: none:
   }
 
@@ -308,8 +216,6 @@ footer section{
          height: 280px;
  }
 
- .gallery{
-     grid-template-columns: 1fr;
- }  
+
 
   
