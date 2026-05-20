@@ -1,29 +1,29 @@
-* { 
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #d2a9c9;
+    background-color: #d2a9c9;
     color: #1f1029;
 }
 
-header{
-      background-color: white;
-      padding: 22px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+header {
+    background-color: white;
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1{
-         color: #4b1d67;
-         margin: 0;
-         font-size: 24px;
+header h1 {
+    color: #4b1d67;
+    font-size: 24px;
+    margin: 0;
 }
 
-nav a{
+nav a {
     color: #1f1029;
     text-decoration: none;
     margin-left: 22px;
@@ -31,127 +31,136 @@ nav a{
     font-size: 14px;
 }
 
-main{
+main {
     max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
 }
 
-.hero{
-     position: relative;
-}
+/* TITLES */
 
-.hero img{
-       width: 100%;
-       height: 430px;
-       object-fit: cover;
-       border-radius: 12px;
-}
-
-.hero-text{
-        position: absolute;
-        top: 12%;
-        left: 30%;
-        color: white;
-}
-
-.hero-text h2{
-        font-size: 48px;
-        margin: 0px;
-        text-shadow: 2px 2px 6px black;
-}
-
-.button,
-button{
-      background: black;
-      color: white;
-      padding: 14px 24px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 20px;
-}
-
-.page-title{
-       text-align: center;
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .page-title h2,
-.section-title{
-       font-size: 42px;
-       color: black;
-       text-align: center;
+.section-title {
+    font-size: 42px;
+    text-align: center;
+    color: black;
 }
 
-.two-column{
-      display: flex;
-      gap: 45px;
-      align-items: center;
-      margin: 60px 0;
+/* HERO */
+
+.hero {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.hero img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 6px black;
+}
+
+/* ABOUT + BOOKING LAYOUT */
+
+.two-column {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .two-column article,
 .two-column figure,
-.two-column form{
+.two-column form {
     flex: 1;
 }
 
-.two-column img{
-     width: 100%;
-     height: 360px;
-     object-fit: cover;
-     border-radius: 8px;
+.two-column img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.cards{
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
+/* SERVICES */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.card{
-     width: 210px;
-     text-align: center;
+.card {
+    width: 210px;
+    text-align: center;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
 }
 
-.card img{
-     width: 100%;
-     height: 170px;
-     object-fit: cover;
-     border-radius: 5px;
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.card h3{
-      margin-bottom: 5px;
+.card h3 {
+    margin: 10px 0 5px;
 }
 
-.price{
-     color: red;
-     font-size: 22px;
-     font-weight: bold;
+.card p {
+    font-size: 14px;
 }
 
-.gallery{
+.price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* GALLERY */
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.gallery img{
-     width: 100%;
-     height: 240px;
-     object-fit: cover;
-     border-radius: 5px;
+.gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-figure{
-     margin: 0;
+figure {
+    margin: 0;
 }
 
-form{
+/* FORMS */
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -159,57 +168,80 @@ form{
 
 input,
 select,
-textarea{
+textarea {
     padding: 14px;
     border: 1px solid #b78ab0;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-textarea{
+textarea {
     height: 120px;
 }
 
-footer{
-      background-color: #d2a9c9;
-      color: black;
-      border-top: 1px solid #e7cfe2;
-      padding: 35px 60px;
-      display: flex;
-      justify-content: space-between;
+/* BUTTONS */
+
+.button,
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
 }
 
+.center {
+    text-align: center;
+    margin-top: 35px;
+}
 
-@media screen and (max-width: 768px){
-       header,
-       .two-column,
-        footer{
-               flex-direction: column;
-               text-align: center;
-        }
+/* FOOTER */
 
-  nav a {
-       display: block;
-       margin: 10px 0;
-  }
-    
+footer {
+    border-top: 1px solid #e7cfe2;
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d2a9c9;
+    color: black;
+}
 
-  .hero-text{
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+    header,
+    .two-column,
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-text {
         position: static;
         color: black;
         text-align: center;
-  }
+    }
 
-  .hero-text h2{
-         font-size: 30px;
-         text-shadow: none:
-  }
+    .hero-text h2 {
+        font-size: 30px;
+        text-shadow: none;
+    }
 
- .cards,
- .gallery{
-         display: grid;
-         grid-template-columns: 1fr;
- }
+    .cards,
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
 
   
